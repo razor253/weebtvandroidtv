@@ -1,0 +1,48 @@
+v0.2.0~beta2
+- removed XBMC_PLAYER_CORE_OPTIONS, because is no longer working with Kodi v17
+- addon description changes
+
+v0.2.0~beta
+- preparation to main release
+
+v0.1.44
+- all url requests include now version of plugin
+- small fix with referenced before assignment (title)
+- removed class Messages
+- auto reconnect improvements
+- removed unused code
+- add license information
+- minor fixes and  improvements
+
+v0.1.4
+- removed class InitPlayer, moved all to VideoPlayer class
+- minor changes in user settings
+ - add preferable video quality (low, standard or high)
+ - add more channel list views
+ - add auto reconnect option for video player (2)
+- changes in translations for en/pl
+- try load simplejson as json if error try load json (some xbmc release do not have simplejson)
+- minor fixes
+- removed unused code
+- add optional="true" for all addon.xml requires
+
+v0.1.33
+- pl translation fix
+- python require version change to min. 2.1.0
+
+v0.1.32
+- small fix with view change, when from menu main we going to channels list and icon view is changing to channel list, but sometimes we seen this change on icons in main menu
+
+v0.1.31
+- internal number version of plugin fix
+
+v0.1.3
+- Removed ThreadPlayerControl('Stop').start() on click stop button and plugin not freeze now (TODO:stop after pause)
+- Removed RTMP class and transferred to the function of the class InitPlayer by creating setPlayer
+- Plugin check is available new version on load and show information if yes and what importance
+- on LoadVideoLink all need vars are loaded from POST, without using previously loaded json array (new: imgLink, multibitrate, TODO:titile)
+- Icon.png change (TODO:Error when manager loading)
+- minor fixes
+
+v0.1.22
+- Channel logo loaded from obtained url (weeb.tv: images have now uniqe hash, channel id is not used anymore for new images)
